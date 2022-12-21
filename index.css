@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container>div {
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid gray;
+    background-color: lightskyblue;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .container>div {
+        background-color: aqua;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container>div {
+        background-color: lightskyblue;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container>div {
+        background-color:lightsteelblue;
+        width: 27%;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .container>div {
+        background-color: lemonchiffon;
+        width:40.5%;
+    }
+}
+/* Media Query for mobiles*/
+@media (max-width: 480px) {
+    .container>div {
+        background-color:peachpuff;
+        width: 80.5%;
+    }
+}
